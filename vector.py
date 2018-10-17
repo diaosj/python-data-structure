@@ -36,4 +36,20 @@ class Vector:
 
     def __str__(self):
         """Produce string representation of vector."""
+        # return '<' + str(self._coords) + '>'
         return '<' + str(self._coords)[1:-1] + '>'
+
+
+if __name__ == '__main__':
+    v = Vector(5)
+    print v
+    v[1] = 23
+    v[-1] = 45
+    print v
+    u = v + v
+    print u
+    total = 0
+    for entry in v:
+        total += entry
+    print total
+
