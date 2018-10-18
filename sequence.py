@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+
 class Sequence(metaclass=ABCMeta):
     """Our own version of collections.Sequence abstract base class."""
 
